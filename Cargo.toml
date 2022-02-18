@@ -2,9 +2,9 @@
 name = "rust-blogpost-auth-async"
 version = "0.1.0"
 edition = "2021"
+author = "mathcosfelipe@gmail.com"
 
 [dependencies]
-author = "mathcosfelipe@gmail.com"
 actix-web = "2.0.0"
 actix-web-httpauth = { git = "https://github.com/actix/actix-web-httpauth" }
 chrono = { version = "0.4.10", features = ["serde"] }
