@@ -1,5 +1,17 @@
 use actix_web::{web, App, HttpServer};
 
+#[macro_use]
+extern crate diesel;
+
+use actix_web::{dev::ServiceRequest, web, App, Error, HttpServer};
+use diesel::prelude::*;
+use diesel::r2d2::{self, ConnectionManager};
+
+mod errors;
+mod handlers;
+mod models;
+mod schema;
+
 mod handlers;
 
 #[actix_web::main]
